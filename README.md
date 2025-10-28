@@ -1,4 +1,4 @@
-# Lies-Of-US
+# Cold-Blood
 equipe: João Miguel, Julio, Mauricio, Pedro Ferreira, Pedro Ribeiro
 funções: 
 design: João Miguel, Ribeiro, mauricio
