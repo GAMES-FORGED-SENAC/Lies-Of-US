@@ -1,0 +1,76 @@
+[gd_scene load_steps=9 format=3 uid="uid://b86nd0d1wllf1"]
+
+[ext_resource type="Texture2D" uid="uid://dxfwm6pgpkyc4" path="res://menu.png" id="1_e5dea"]
+[ext_resource type="Script" uid="uid://joei6yyvqn3u" path="res://avancaresquerda.gd" id="2_hyemw"]
+[ext_resource type="Script" uid="uid://b7svhwaj4jvu4" path="res://avancardireita.gd" id="3_5f7ft"]
+[ext_resource type="Texture2D" uid="uid://cityjxrwu0ys3" path="res://vampiro cardgame.jpeg" id="3_sofw2"]
+[ext_resource type="Texture2D" uid="uid://08tq52s8yoxm" path="res://Satoru_Gojo.png" id="4_5f7ft"]
+[ext_resource type="AudioStream" uid="uid://c71qxy6qcvk2e" path="res://nao-viaja-jujutsu-kaisen-dublado-j-jpnivy3v0_yOmxasQe.mp3" id="5_hyemw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5f7ft"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sofw2"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Menu" type="Sprite2D" parent="."]
+position = Vector2(576, 324.5)
+scale = Vector2(0.14375, 0.16175)
+texture = ExtResource("1_e5dea")
+
+[node name="avancaresquerda" type="Button" parent="."]
+layout_mode = 0
+offset_left = 403.0
+offset_top = 275.0
+offset_right = 497.0
+offset_bottom = 372.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5f7ft")
+script = ExtResource("2_hyemw")
+
+[node name="avancardireita" type="Button" parent="."]
+layout_mode = 0
+offset_left = 657.0
+offset_top = 278.0
+offset_right = 749.0
+offset_bottom = 371.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sofw2")
+script = ExtResource("3_5f7ft")
+
+[node name="VampiroCardgame" type="Sprite2D" parent="."]
+position = Vector2(285.25, 280)
+scale = Vector2(0.767206, 0.806061)
+texture = ExtResource("3_sofw2")
+
+[node name="VampiroCardgame2" type="Sprite2D" parent="."]
+position = Vector2(867, 279)
+scale = Vector2(0.767206, 0.806061)
+texture = ExtResource("3_sofw2")
+flip_h = true
+
+[node name="SatoruGojo" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(286, 305.75)
+scale = Vector2(0.800781, 0.423)
+texture = ExtResource("4_5f7ft")
+
+[node name="SatoruGojo2" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(866, 307)
+scale = Vector2(0.800781, 0.423)
+texture = ExtResource("4_5f7ft")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_hyemw")
+volume_db = 12.0
+pitch_scale = 3.0
+
+[connection signal="pressed" from="avancaresquerda" to="avancaresquerda" method="_on_pressed"]
+[connection signal="pressed" from="avancardireita" to="avancardireita" method="_on_pressed"]
