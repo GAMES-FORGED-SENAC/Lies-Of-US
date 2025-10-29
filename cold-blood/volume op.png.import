@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dxvsd5a8sipn7"
+path="res://.godot/imported/volume op.png-74ffc2796a472c798c5c0d9faa4e4466.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://volume op.png"
+dest_files=["res://.godot/imported/volume op.png-74ffc2796a472c798c5c0d9faa4e4466.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1

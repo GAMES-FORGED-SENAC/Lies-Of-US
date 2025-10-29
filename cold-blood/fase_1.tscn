@@ -1,6 +1,5 @@
-[gd_scene load_steps=4 format=3 uid="uid://b1icr4pywe7hq"]
+[gd_scene load_steps=3 format=3 uid="uid://b1icr4pywe7hq"]
 
-[ext_resource type="Texture2D" uid="uid://lfockx6k2gkg" path="res://pixil-frame-0 (1).png" id="1_ru54l"]
 [ext_resource type="PackedScene" uid="uid://bkqmjaci2rj04" path="res://character_body_2d.tscn" id="2_5s2kv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5s2kv"]
@@ -13,7 +12,6 @@ offset_left = -1.0
 offset_top = 557.0
 offset_right = 1152.0
 offset_bottom = 649.0
-texture = ExtResource("1_ru54l")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TextureRect"]
 position = Vector2(1, -557)

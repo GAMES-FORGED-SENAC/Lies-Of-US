@@ -51,5 +51,4 @@ script = SubResource("GDScript_f50pn")
 sprite_frames = SubResource("SpriteFrames_ij6vw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 1)
 shape = SubResource("RectangleShape2D_ghijl")
